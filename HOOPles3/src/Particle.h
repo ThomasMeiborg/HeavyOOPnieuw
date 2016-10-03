@@ -22,7 +22,7 @@ public:
 	void setup();
 	void update();
 	virtual void move();
-	// Virtual??
+	// Virtual override alle methodes.
 	void draw();
 	void defineColors(ofColor center, ofColor inner, ofColor outer);
 };

@@ -15,9 +15,8 @@ public:
 private:
 	int originX;
 	int originY;
-	float curvingParticleRatio;
+	float curvingParticleRatio; //geeft aan hoeveel procent er van bepaalde particles aangemaakt moeten worden ?
 	ofColor inner;
 	ofColor outer;
 
 };
-

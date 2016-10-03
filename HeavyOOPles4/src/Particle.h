@@ -11,7 +11,7 @@ class Particle {
 
         void draw();
 
-        void setColours(ofColor center, ofColor inner, ofColor outer);
+        void setColors(ofColor center, ofColor inner, ofColor outer);
 
     protected:
         ofPoint position;
@@ -19,9 +19,9 @@ class Particle {
         ofVec2f speed;
         long lifetime;
 
-        ofColor centerColour = ofColor::white;
-        ofColor innerColour;
-        ofColor outerColour;
+        ofColor centerColor = ofColor::white;
+        ofColor innerColor;
+        ofColor outerColor;
 
 };
 

@@ -11,6 +11,8 @@ Particle* ParticleFactory::emit() {
 		newParticle = new Particle(originX, originY);
 	}
 
+	newParticle->setColors(ofColor::white, inner, outer);
+
 	return newParticle;
 }
 
@@ -22,6 +24,8 @@ void ParticleFactory::setOrigin(int x, int y) {
 	originX = x;
 	originY = y;
 }
-void ParticleFactory::setColors(ofColor innerColor, ofColor outerColor) {
-
+void ParticleFactory::setColors(ofColor innerColor, ofColor outerColor) 
+{
+	inner = innerColor;
+	outer = outerColor;
 }

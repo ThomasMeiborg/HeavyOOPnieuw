@@ -15,6 +15,6 @@ class ofApp : public ofBaseApp{
 
 		ParticleFactory factory1;
 		ParticleFactory factory2;
-
+		ParticleFactory factory3;
 		
 };
