@@ -1,16 +1,10 @@
-#pragma once
 
-#include "ofMain.h"
-#include "Particle.h"
+CirkelParent(Deze class is een parent van 3 cirkels(objecten) die behalve oppacity en radius dezelfde attributen delen) :
+	Color : Choose Red or Blue
+	Speed : X - pos and / or Y - pos + Random Number Within Range
+	Width(X - pos) en Height(Y - pos) = CirkelSpawner pos
 
-class ofApp : public ofBaseApp {
-
-public:
-	void setup();
-	void update();
-	void draw();
-
-	void keyPressed(int key);
-
-	Particle part1;
-};
+Room (er moet een window aangemaakt worden):
+Width = x
+Height = y
+(Background color) = zwart
