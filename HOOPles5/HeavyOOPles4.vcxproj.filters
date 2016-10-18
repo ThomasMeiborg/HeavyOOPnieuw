@@ -22,6 +22,7 @@
     <ClCompile Include="src\ParticleFactory.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\ParticleOogst.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -44,6 +45,7 @@
     <ClInclude Include="src\ParticleFactory.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="src\ParticleOogst.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />

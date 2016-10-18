@@ -5,7 +5,7 @@
 ParticleSpawner::ParticleSpawner()
 {
 	radius = 5;
-	position = Cursorpos;
+	//position = Cursorpos;
 }
 
 void ParticleSpawner::setup() {
