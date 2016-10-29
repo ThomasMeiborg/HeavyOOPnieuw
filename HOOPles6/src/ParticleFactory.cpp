@@ -43,9 +43,3 @@ void ParticleFactory::setOrigin(int x, int y) {
 	originX = x;
 	originY = y;
 }
-
-//void ParticleFactory::setColors(ofColor innerColor, ofColor outerColor) 
-//{
-//	inner = innerColor;
-//	outer = outerColor;
-//}

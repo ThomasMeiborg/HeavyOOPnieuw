@@ -25,7 +25,7 @@ class Particle {
         ofVec2f speed;
         long lifetime;
 
-		ofColor centerColor;// = ofColor::white;
+		ofColor centerColor;
         ofColor innerColor;
         ofColor outerColor;
 

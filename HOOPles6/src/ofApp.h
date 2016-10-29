@@ -13,8 +13,6 @@ class ofApp : public ofBaseApp{
 		void draw();
 		void keyPressed(int key);
 
-		//int factoryNumb;
-
 	private:
 		vector<Particle*> particles;
 
