@@ -1,6 +1,22 @@
 #include "ParticleFactory.h"
 #include "CurvingParticle.h"
 
+//Singleton......
+ParticleFactory::ParticleFactory() {
+}
+
+ParticleFactory* ParticleFactory::instance() {
+	if (!theSingleton) {
+		theSingleton = new ParticleFactory();
+	}
+	return theSingleton;
+	//als het object theSingleton ofwel de ParticleFactory nog niet bestaat moet het aangemaakt worden.
+}
+
+ParticleFactory* ParticleFactory::theSingleton = 0;
+// Dit zorgt ervoor dar er maar 1 van aangemaakt kan worden
+//..............
+
 Particle* ParticleFactory::emit() {
 	Particle*newParticle;
 
@@ -43,3 +59,6 @@ void ParticleFactory::setOrigin(int x, int y) {
 	originX = x;
 	originY = y;
 }
+
+
+

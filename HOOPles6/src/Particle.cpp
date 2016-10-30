@@ -4,7 +4,7 @@ Particle::Particle(int startX, int startY) {
 	radius = ofRandom(5, 25);
 	position = ofPoint(startX, startY);
 
-	speed = ofVec2f(ofRandom(-5, 5), ofRandom(-5, 5));
+	speed = ofVec2f(ofRandom(-1, 1), ofRandom(-1, 1));
 	lifetime = 0;
 }
 

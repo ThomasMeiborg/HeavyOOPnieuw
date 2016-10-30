@@ -1,8 +1,7 @@
 #include "CurvingParticle.h"
 
 CurvingParticle::CurvingParticle(int startX, int startY) : Particle(startX, startY) {
-    curve = ofVec2f(ofRandom(-5, 5),
-                    ofRandom(-5, 5));
+    curve = ofVec2f(ofRandom(-1, 1), ofRandom(-1, 1));
 }
 
 void CurvingParticle::move() {
