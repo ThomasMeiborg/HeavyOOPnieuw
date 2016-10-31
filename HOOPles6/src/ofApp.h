@@ -13,6 +13,10 @@ class ofApp : public ofBaseApp{
 		void draw();
 		void keyPressed(int key);
 		
+		float angle;
+		float speed;
+		int radius;
+		int colornumb;
 		//ParticleFactory(int startX, int startY);
 
 	private:

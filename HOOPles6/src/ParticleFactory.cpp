@@ -59,6 +59,3 @@ void ParticleFactory::setOrigin(int x, int y) {
 	originX = x;
 	originY = y;
 }
-
-
-
