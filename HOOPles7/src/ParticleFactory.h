@@ -2,7 +2,7 @@
 
 #include "Particle.h"
 
-class ParticleFactory
+const class ParticleFactory
 {
 public:
 
@@ -11,12 +11,12 @@ public:
 	static ParticleFactory* instance();
 	//..............
 
-	void setOrigin(int x, int y);
-	void setCurvingParticleRatio(float ratio);
+	const void setOrigin(int x, int y);
+	const void setCurvingParticleRatio(float ratio);
 
-	void setFactoryColorRange(int roodMin, int roodMax, int blauwMin, int blauwMax, int groenMin, int groenMax);
+	const void setFactoryColorRange(int roodMin, int roodMax, int blauwMin, int blauwMax, int groenMin, int groenMax);
 
-	Particle* emit();
+	Particle* emit() const;
 
 	//Factory movement.........
 	//void move();
@@ -25,7 +25,7 @@ public:
 private:
 	//Singleton...
 	//Door de ParticleFactory private te instantieren kunnen andere objecten de ParticleFactory eigenschappen niet gebruiken. Ze bestaan alleen voor dit object.
-	ParticleFactory();
+	const ParticleFactory();
 
 	//Het enige object met de eigenschappen van ParticleFactory wordt hier aangemaakt.
 	static ParticleFactory* theSingleton;

@@ -15,7 +15,7 @@ ParticleFactory* ParticleFactory::instance() {
 ParticleFactory* ParticleFactory::theSingleton = 0;
 //..............
 
-Particle* ParticleFactory::emit() {
+Particle* ParticleFactory::emit() const{
 	Particle*newParticle;
 
 	if (ofRandom(1) > (1 - curvingParticleRatio)) {
@@ -38,7 +38,7 @@ Particle* ParticleFactory::emit() {
 	return newParticle;
 }
 
-void ParticleFactory::setFactoryColorRange(int rMin, int rMax, int gMin, int gMax, int bMin, int bMax) {
+const void ParticleFactory::setFactoryColorRange(int rMin, int rMax, int gMin, int gMax, int bMin, int bMax) {
 	roodMin = rMin;
 	roodMax = rMax;
 	groenMin = gMin;
@@ -49,11 +49,11 @@ void ParticleFactory::setFactoryColorRange(int rMin, int rMax, int gMin, int gMa
 }
 
 
-void ParticleFactory::setCurvingParticleRatio(float ratio) {
-	curvingParticleRatio = ratio;
+const void ParticleFactory::setCurvingParticleRatio(float ratio) {
+	const float curvingParticleRatio = ratio;
 }
 
-void ParticleFactory::setOrigin(int x, int y) {
+const void ParticleFactory::setOrigin(int x, int y) {
 	originX = x;
 	originY = y;
 

@@ -5,19 +5,20 @@
 
 #define MAX_LIFETIME 200;
 
-class Particle {
+
+const class Particle {
     public:
         Particle(int startX, int startY);
 		
 		virtual ~Particle();
 
-        virtual void move();
+        const virtual void move();
 
-        void draw();
+        const void draw();
 
-		void setColors(ofColor center, ofColor inner, ofColor outer);
+		const void setColors(ofColor center, ofColor inner, ofColor outer);
 
-		bool isDead();
+		const bool isDead();
 
     protected:
         ofPoint position;

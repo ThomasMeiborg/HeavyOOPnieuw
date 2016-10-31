@@ -4,11 +4,11 @@
 #include "ofMain.h"
 #include "Particle.h"
 
-class CurvingParticle : public Particle {
+const class CurvingParticle : public Particle {
     public:
-        CurvingParticle(int startX, int startY);
+        const CurvingParticle(int startX, int startY);
 
-        void move();
+        const void move();
 
         ofVec2f curve;
 };

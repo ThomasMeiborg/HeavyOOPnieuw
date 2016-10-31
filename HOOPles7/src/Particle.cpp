@@ -13,19 +13,19 @@ Particle::~Particle() {
 	outerColor = ofColor(128, 255, 255, 15);
 }
 
-void Particle::setColors(ofColor center, ofColor inner, ofColor outer) {
+const void Particle::setColors(ofColor center, ofColor inner, ofColor outer) {
 	centerColor = center;
 	innerColor = inner;
 	outerColor = outer;
 }
 
-void Particle::move() {
+const void Particle::move() {
 	position += speed;
 	lifetime++;
 }
 
 
-void Particle::draw() {
+const void Particle::draw() {
 	ofSetColor(outerColor);
 	ofDrawCircle(position.x, position.y, radius * 2.0);
 
@@ -36,6 +36,6 @@ void Particle::draw() {
 	ofDrawCircle(position.x, position.y, radius * 0.25);
 }
 
-bool Particle::isDead() {
+const bool Particle::isDead() {
 	return lifetime > MAX_LIFETIME;
 }
