@@ -18,15 +18,11 @@ public:
 
 	Particle* emit();
 
-	//.........
-	//virtual void move(int speedX, int speedY);
+	//Factory movement.........
+	//void move();
 	//..............
 
 private:
-	//...
-	//ParticleFactory(int startX, int startY);
-	//..........
-
 	//Singleton...
 	//Door de ParticleFactory private te instantieren kunnen andere objecten de ParticleFactory eigenschappen niet gebruiken. Ze bestaan alleen voor dit object.
 	ParticleFactory();
@@ -50,12 +46,14 @@ private:
 	int groenMin;
 	int groenMax;
 
-	//..........
-//protected:
-	//ofVec2f speed;
-	//int xPos;
-	//int yPos;
-	//ofPoint position;
+	//Factory Movement..........
+/*
+protected:
+	ofPoint position;
+	float angle;
+	float speed;
+	int radius;
+*/
 	//....................
 
 };

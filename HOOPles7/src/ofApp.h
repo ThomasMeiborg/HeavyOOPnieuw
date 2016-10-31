@@ -12,8 +12,8 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 		void keyPressed(int key);
-		
-		//ParticleFactory(int startX, int startY);
+
+		int colornumb;
 
 	private:
 		vector<Particle*> particles;
@@ -21,6 +21,5 @@ class ofApp : public ofBaseApp{
 		ParticleFactory* factory;
 		//ParticleFactory factory2;
 		//ParticleFactory factory3;
-		//Er kan nog maar 1 factory bestaan door de singleton dus factory 2 en 3 werken niet meer.
 		ParticleOogst oogst;
 };

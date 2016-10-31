@@ -1,20 +1,7 @@
 #include "ParticleFactory.h"
 #include "CurvingParticle.h"
 
-//ParticleFactory::ParticleFactory(int startX, int startY) {
-//	position = ofPoint(startX, startY);
-//	speed = ofVec2f(ofRandom(-5, 5), ofRandom(-5, 5));
-//}
-
-//void ParticleFactory::move(int speedX, int speedY) {
-//	xPos += speedX;
-//	yPos += speedY;
-//}
-//.......
-
-
 //Singleton......
-
 ParticleFactory::ParticleFactory() {
 }
 
@@ -69,7 +56,24 @@ void ParticleFactory::setCurvingParticleRatio(float ratio) {
 void ParticleFactory::setOrigin(int x, int y) {
 	originX = x;
 	originY = y;
+
+//Factory Movement.........
+/*
+	//Spawnermovement starting point
+	position = ofPoint(ofGetWidth() / 2, ofGetHeight() / 4);
+	
+	angle = 0, 05;
+	speed = 0.01;
+	radius = 200;
+*/
 }
 
+/*
+void ParticleFactory::move() {
+	position = ofPoint(ofGetWidth() / 2 + sin(angle)* radius, ofGetHeight() / 2 + cos(angle)* radius);
+	angle = angle + speed;
+}
+*/
+//...................
 
 
